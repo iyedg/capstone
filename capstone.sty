@@ -1,0 +1,35 @@
+\ProvidesPackage{capstone}
+
+%% Loading packages
+\RequirePackage[margin=2.5cm]{geometry}
+\RequirePackage{lastpage}
+\RequirePackage[T1]{fontenc}
+% Package to load external graphics
+\RequirePackage{graphicx}
+% Package to provide mathematical utilities
+\RequirePackage{amsmath}
+% Package for improving output
+\RequirePackage{microtype}
+% Package to apply some bug fixes to the kernel
+\RequirePackage{fixltx2e}
+% Packages for proper language handling and string encoding
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[english]{babel}
+% Package to allow working with multiple files
+\RequirePackage{subfiles}
+% Package to indent the first paragraph
+\RequirePackage{indentfirst}
+% Package for drawing graphics
+\RequirePackage{tikz}
+% For finding line intersecions
+\usetikzlibrary{intersections}
+% Package for custom section headings
+\RequirePackage{titlesec}
+
+\RequirePackage{xifthen}
+
+%%Macros
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@} %% Convert to roman numerals
+
+%% Document settings
+\linespread{1.5}
